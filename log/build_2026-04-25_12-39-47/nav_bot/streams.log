@@ -1,0 +1,34 @@
+[0.018s] Invoking command in '/home/rohan/cobotx/build/nav_bot': /usr/bin/cmake --build /home/rohan/cobotx/build/nav_bot -- -j16 -l16
+[0.090s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.251s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.279s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.342s] Error parsing '/home/rohan/cobotx/src/nav_bot/package.xml':
+[0.406s] Traceback (most recent call last):
+[0.407s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.407s]     main()
+[0.407s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.407s]     raise e
+[0.407s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.407s]     package = parse_package_string(
+[0.407s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[0.407s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[0.407s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/rohan/cobotx/src/nav_bot/package.xml':
+[0.407s] Error(s):
+[0.408s] - The generic dependency on 'rclpy' is redundant with: build_depend, build_export_depend, exec_depend
+[0.408s] - The generic dependency on 'sensor_msgs' is redundant with: build_depend, build_export_depend, exec_depend
+[0.430s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.430s]   execute_process(/usr/bin/python3
+[0.431s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.431s]   /home/rohan/cobotx/src/nav_bot/package.xml
+[0.431s]   /home/rohan/cobotx/build/nav_bot/ament_cmake_core/package.cmake) returned
+[0.431s]   error code 1
+[0.431s] Call Stack (most recent call first):
+[0.431s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.431s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.431s]   CMakeLists.txt:32 (ament_lint_auto_find_test_dependencies)
+[0.431s] 
+[0.431s] [0m
+[0.431s] -- Configuring incomplete, errors occurred!
+[0.431s] See also "/home/rohan/cobotx/build/nav_bot/CMakeFiles/CMakeOutput.log".
+[0.435s] gmake: *** [Makefile:254: cmake_check_build_system] Error 1
+[0.439s] Invoked command in '/home/rohan/cobotx/build/nav_bot' returned '2': /usr/bin/cmake --build /home/rohan/cobotx/build/nav_bot -- -j16 -l16

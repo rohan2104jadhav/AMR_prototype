@@ -1,0 +1,9 @@
+[0.016s] Invoking command in '/home/rohan/cobotx/build/nav_bot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rohan/cobotx/build/nav_bot -- -j16 -l16
+[0.158s] Built target ament_cmake_python_symlink_scripts
+[0.597s] running egg_info
+[0.598s] writing scripts.egg-info/PKG-INFO
+[0.598s] writing dependency_links to scripts.egg-info/dependency_links.txt
+[0.598s] writing top-level names to scripts.egg-info/top_level.txt
+[0.602s] reading manifest file 'scripts.egg-info/SOURCES.txt'
+[0.603s] writing manifest file 'scripts.egg-info/SOURCES.txt'
+[0.643s] Built target ament_cmake_python_build_scripts_egg

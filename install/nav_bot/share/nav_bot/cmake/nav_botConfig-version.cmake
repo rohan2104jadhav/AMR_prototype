@@ -1,0 +1,1 @@
+/home/rohan/cobotx/build/nav_bot/ament_cmake_core/nav_botConfig-version.cmake

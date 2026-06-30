@@ -1,0 +1,1 @@
+/home/rohan/cobotx/src/nav_bot/scripts/yolo_detector.py

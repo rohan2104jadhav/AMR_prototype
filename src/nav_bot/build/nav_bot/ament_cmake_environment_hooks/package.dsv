@@ -1,0 +1,4 @@
+source;share/nav_bot/local_setup.bash
+source;share/nav_bot/local_setup.dsv
+source;share/nav_bot/local_setup.sh
+source;share/nav_bot/local_setup.zsh

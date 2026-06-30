@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:arg name="robot_name" default="nav_bot"/>
+    <xacro:property name="robot_name" value="$(arg robot_name)"/>
+
+    <gazebo>
+        <plugin name='gz::sim::systems::DiffDrive' filename='gz-sim-diff-drive-system'>
+            <topic>/model/${robot_name}/cmd_vel</topic>
+            <odom_topic>/model/${robot_name}/odometry</odom_topic>
+            <tf_topic>/model/${robot_name}/tf</tf_topic>
+            <odom_publish_frequency>30</odom_publish_frequency>
+            <odom_frame>${robot_name}/odom</odom_frame>
+            <child_frame_id>${robot_name}/base_link</child_frame_id>
+
+            <!-- ✅ Updated to match renamed joints in robot_core.xacro -->
+            <left_joint>${robot_name}/left_wheel_joint</left_joint>
+            <right_joint>${robot_name}/right_wheel_joint</right_joint>
+
+            <wheel_separation>0.297</wheel_separation>
+            <wheel_radius>0.033</wheel_radius>
+        </plugin>
+
+        <plugin name="gz::sim::systems::JointStatePublisher" 
+                filename="gz-sim-joint-state-publisher-system">
+            <topic>/model/${robot_name}/joint_states</topic>
+            <!-- ✅ Updated to match renamed joints -->
+            <joint_name>${robot_name}/left_wheel_joint</joint_name>
+            <joint_name>${robot_name}/right_wheel_joint</joint_name>
+        </plugin>
+    </gazebo>
+
+</robot>
