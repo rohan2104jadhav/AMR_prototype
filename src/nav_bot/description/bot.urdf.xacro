@@ -9,6 +9,8 @@
 
     <xacro:include filename="gz_control.xacro" />
 
+    <xacro:include filename="camera.xacro" />
+
     <xacro:include filename="multi_lidar.xacro" />
 
     <xacro:include filename="multi_camera.xacro" />

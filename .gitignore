@@ -1,0 +1,6 @@
+# ROS 2 / Colcon build files
+build/
+install/
+log/
+.vscode/
+*.pyc__pycache__/
